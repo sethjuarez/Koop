@@ -1,0 +1,610 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--LLBLGen Pro v5.2 project file. Do not manually edit this file. Incorrect references could lead to an unloadable project file.-->
+<Project Version="5.2" TargetFrameworkName="LLBLGen Pro Runtime Framework" UseLegacyDefaults="false">
+  <Properties>
+    <Abbreviations />
+    <Property Name="AdditionalTaskPerformerFolder" Value="" />
+    <Property Name="AdditionalTasksFolder" Value="" />
+    <Property Name="AdditionalTemplatesFolder" Value="" />
+    <Property Name="AdditionalTypeConverterFolder" Value="" />
+    <Property Name="AddNewElementsAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AddNewFieldsAfterRefresh_v5" Value="true" />
+    <Property Name="AddNewFieldsAfterRelationalModelDataSync_v5" Value="true" />
+    <Property Name="AddNewViewsAsEntitiesAfterRefresh_v5" Value="false" />
+    <Property Name="AddNewViewsAsEntitiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="AutoAddManyToManyRelationships" Value="false" />
+    <Property Name="AutoAssignSequencesToIntegerPks" Value="true" />
+    <Property Name="AutoAssignTypeConverterToFieldMapping" Value="true" />
+    <Property Name="CleanUpVsNetProjects" Value="true" />
+    <Property Name="ConnectionStringKeyNamePattern" Value="ConnectionString.{$ProviderName}" />
+    <Property Name="DefaultDeleteRuleAction" Value="1" />
+    <Property Name="DefaultUpdateRuleAction" Value="0" />
+    <Property Name="EncodingToUse" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForTable" Value="0" />
+    <Property Name="EntityActionCombinationDefaultForView" Value="4" />
+    <Property Name="EntityFieldNameStripPattern" Value="{}{}" />
+    <Property Name="EntityNameStripPattern" Value="{tbl_}{}" />
+    <Property Name="ExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="FailCodeGenerationOnWriteError" Value="false" />
+    <Property Name="FieldMappedOntoRelatedFieldPattern" Value="{$RelatedFieldName}" />
+    <Property Name="FkFieldsAreNamedAfterTargetField" Value="true" />
+    <Property Name="ForeignKeyConstraintPattern" Value="FK_{$Guid}" />
+    <Property Name="ForeignKeyFieldPattern" Value="{$NavigatorName}{$RelatedFieldName}" />
+    <Property Name="GroupUsage" Value="0" />
+    <Property Name="IdentifyingFieldsFollowDBPrimaryKeyConstraints_v5" Value="true" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseInsensitiveDBs" Value="false" />
+    <Property Name="InsertUnderscoreAtWordBreakCaseSensitiveDBs" Value="false" />
+    <Property Name="LengthPrecisionScaleFollowDBLengthPrecisionScale_v5" Value="true" />
+    <Property Name="MakeElementNamePascalCasing" Value="true" />
+    <Property Name="NavigatorMappedOntoManyToManyPattern" Value="{$EndEntityName}CollectionVia{$IntermediateEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneManyToOnePattern" Value="{$EndEntityName$S}" />
+    <Property Name="NavigatorMappedOntoOneToManyPattern" Value="{$EndEntityName$P}" />
+    <Property Name="NonExcludableOrphanedElementDetectedAction" Value="3" />
+    <Property Name="PreferDecimalOverCurrencyTypes" Value="true" />
+    <Property Name="PreferNaturalCharacterTypes" Value="true" />
+    <Property Name="PreferSystemSequencesOverSchemaSequencesIfApplicable" Value="true" />
+    <Property Name="PreferVariableLengthTypes" Value="true" />
+    <Property Name="PrimaryKeyConstraintPattern" Value="PK_{$Guid}" />
+    <Property Name="ProjectCreator" Value="Seth Juarez" />
+    <Property Name="ProjectName" Value="Koop.Data" />
+    <Property Name="ReflectNullabilityOfElementFieldInTargetField_v5" Value="false" />
+    <Property Name="ReflectTypeOfElementFieldInTargetField_v5" Value="true" />
+    <Property Name="RelationalModelDataElementNameCasingCaseInsensitiveDBs" Value="3" />
+    <Property Name="RelationalModelDataElementNameCasingCaseSensitiveDBs" Value="3" />
+    <Property Name="RelationshipsFollowDBForeignKeyConstraints_v5" Value="true" />
+    <Property Name="RemoveUnderscoresFromElementName" Value="true" />
+    <Property Name="RemoveUnmappedElementsAfterRefresh_v5" Value="false" />
+    <Property Name="RemoveUnmappedElementsAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRefresh" Value="false" />
+    <Property Name="ResetFieldOrderBasedOnTargetOrderAtRelationalModelDataSync" Value="false" />
+    <Property Name="RetrieveDBCustomProperties" Value="false" />
+    <Property Name="RootNamespace" Value="" />
+    <Property Name="SequenceNameMatchingPattern" Value="SEQ_{$TableName}" />
+    <Property Name="SequencePattern" Value="SEQ_{$EntityName}" />
+    <Property Name="SetGroupNameAfterSchemaName" Value="true" />
+    <Property Name="SetSchemaNameAfterGroupName" Value="true" />
+    <Property Name="SingularizeElementNames" Value="true" />
+    <Property Name="StoredProcNameStripPattern" Value="{pr_, sp_}{}" />
+    <Property Name="StoreTimeLastGeneratedIntoProject" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="SyncRelationalModelDataElementNameWithModelElementName_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRefresh_v5" Value="false" />
+    <Property Name="SyncRenamedMappedElementNamesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="TableValuedFunctionNameStripPattern" Value="{fn_, pr_, sp_}{}" />
+    <Property Name="TargetPerEntityEdgesRequireBackingFkConstraint" Value="true" />
+    <Property Name="TypedViewFieldNameStripPattern" Value="{}{}" />
+    <Property Name="TypedViewMappedOnResultsetPattern" Value="{$ProcFunctionName}{$ResultsetName}Result" />
+    <Property Name="TypedViewNameStripPattern" Value="{vw_}{}" />
+    <Property Name="UniqueConstraintPattern" Value="UC_{$Guid}" />
+    <Property Name="UniqueConstraintsFollowDBUniqueConstraints_v5" Value="true" />
+    <Property Name="UpdateCustomPropertiesAfterRefresh_v5" Value="false" />
+    <Property Name="UpdateCustomPropertiesAfterRelationalModelDataSync_v5" Value="false" />
+    <Property Name="UseCustomFieldOrderingOnNewElements" Value="false" />
+  </Properties>
+  <TypeShortcuts />
+  <IgnoredWarnings />
+  <SavedSearchQueries />
+  <CodeGenerationCyclePreferences>
+    <OutputType Value="3">
+      <LastUsedPreferences>
+        <DestinationRootFolder Value="C:\projects\Koop\Koop.Data" />
+        <FrameworkName Value="LLBLGen Pro Runtime Framework" />
+        <LanguageName Value="C#" />
+        <PlatformName Value=".NET 4.5.2" />
+        <PresetName Value="SD.Presets.Adapter.General" />
+        <RootNamespace Value="Koop.Data" />
+        <TemplateGroup Value="Adapter" />
+        <TemplateBindings>
+          <Binding Name="SD.TemplateBindings.SharedTemplates.Deprecated" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates.NET45x" />
+          <Binding Name="SD.TemplateBindings.SharedTemplates" />
+          <Binding Name="SD.TemplateBindings.SqlServerSpecific" />
+          <Binding Name="SD.TemplateBindings.General" />
+        </TemplateBindings>
+      </LastUsedPreferences>
+    </OutputType>
+  </CodeGenerationCyclePreferences>
+  <CodeGenerationMetaDataDefaults>
+    <TargetElement Type="256">
+      <Defaults>
+        <Attributes>
+          <Attribute Value="Browsable($false)" />
+        </Attributes>
+      </Defaults>
+    </TargetElement>
+  </CodeGenerationMetaDataDefaults>
+  <EntityModel>
+    <ValueTypeDefinitions />
+    <EntityDefinitions>
+      <EntityDefinition Name="Billing" GroupName="Job" ObjectID="bc38d381-751c-4410-9abb-9f8da887805f">
+        <Fields>
+          <Field Name="Amount" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="BillingId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Date" Type="datetime" IsOptional="true" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="JobId" Type="int" IsOptional="true" Precision="10" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Damage" GroupName="Job" ObjectID="0407d8ae-61f2-47f4-bab6-b220dace9f7f">
+        <Fields>
+          <Field Name="Active" Type="bool" />
+          <Field Name="DamageId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="50" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Expense" GroupName="Job" ObjectID="1df52099-edd2-4b52-a517-140ca3100fa4">
+        <Fields>
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="ExpenseId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="ExternalInvoice" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="InvoiceDate" Type="datetime" IsOptional="true" />
+          <Field Name="JobId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="LaborCost" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="LaborHours" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="LaborRate" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="MaterialCost" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="TotalCost" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="VendorId" Type="int" IsOptional="true" Precision="10" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Group" GroupName="Job" ObjectID="d176d1f1-4052-4904-9f71-33245c022614">
+        <Fields>
+          <Field Name="Active" Type="bool" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="GroupId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Name" Type="string" MaxLength="50" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Job" GroupName="Job" ObjectID="d32528aa-308d-49f6-8a78-dccb800b43ad">
+        <Fields>
+          <Field Name="Address1" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="Address2" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="City" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="ContractedAmount" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="DamageId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="EndDate" Type="datetime" IsOptional="true" />
+          <Field Name="EstimatorId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="GroupId" Type="int" Precision="10" />
+          <Field Name="IsAging" Type="bool" />
+          <Field Name="JobId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="Overhead" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="PercentDone" Type="decimal" Precision="19" Scale="4" />
+          <Field Name="StartDate" Type="datetime" IsOptional="true" />
+          <Field Name="State" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="StatusId" Type="int" Precision="10" />
+          <Field Name="UpdateDate" Type="datetime" IsOptional="true" />
+          <Field Name="Zip" Type="string" IsOptional="true" MaxLength="50" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Payment" GroupName="Job" ObjectID="32c3b296-c91c-4d0f-9766-fc371967da71">
+        <Fields>
+          <Field Name="Amount" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="Date" Type="datetime" IsOptional="true" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="JobId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="PaymentId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Person" GroupName="Job" ObjectID="4979775e-bfb9-4bd6-a30b-10cf4aa325b7">
+        <Fields>
+          <Field Name="Active" Type="bool" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="FirstName" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="LastName" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="Password" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="PersonId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="RoleId" Type="int" IsOptional="true" Precision="10" />
+          <Field Name="Username" Type="string" IsOptional="true" MaxLength="50" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Role" GroupName="Job" ObjectID="a1b10d02-4c3b-4709-af96-230628c06169">
+        <Fields>
+          <Field Name="Active" Type="bool" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="RoleId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Setting" GroupName="Job" ObjectID="e740ace5-0217-4e66-bb65-455d0c4a39d1">
+        <Fields>
+          <Field Name="DbVersion" Type="decimal" IsOptional="true" Precision="19" Scale="4" />
+          <Field Name="SettingsId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+          <Field Name="Xml" Type="string" IsOptional="true" MaxLength="2048" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Status" GroupName="Job" ObjectID="9e11c1b0-a932-4af0-8ea2-55d29650a18b">
+        <Fields>
+          <Field Name="Active" Type="bool" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="StatusId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+      <EntityDefinition Name="Vendor" GroupName="Job" ObjectID="b1969ab8-6ac0-453f-9617-eb2762dc3e3e">
+        <Fields>
+          <Field Name="Active" Type="bool" />
+          <Field Name="Description" Type="string" IsOptional="true" MaxLength="1024" />
+          <Field Name="Name" Type="string" IsOptional="true" MaxLength="50" />
+          <Field Name="VendorId" Type="int" IsReadOnly="true" Precision="10" IsPrimaryKey="true" />
+        </Fields>
+      </EntityDefinition>
+    </EntityDefinitions>
+    <Relationships>
+      <NormalRelationship Name="Job.Billing.Job-Job.Job.Billings" Start="Job:Billing" End="Job:Job" StartNavigator="Job" EndNavigator="Billings" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="JobId" PkField="JobId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Expense.Job-Job.Job.Expenses" Start="Job:Expense" End="Job:Job" StartNavigator="Job" EndNavigator="Expenses" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="JobId" PkField="JobId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Expense.Vendor-Job.Vendor.Expenses" Start="Job:Expense" End="Job:Vendor" StartNavigator="Vendor" EndNavigator="Expenses" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="VendorId" PkField="VendorId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Job.Damage-Job.Damage.Jobs" Start="Job:Job" End="Job:Damage" StartNavigator="Damage" EndNavigator="Jobs" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="DamageId" PkField="DamageId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Job.Group-Job.Group.Jobs" Start="Job:Job" End="Job:Group" StartNavigator="Group" EndNavigator="Jobs" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="GroupId" PkField="GroupId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Job.Person-Job.Person.Jobs" Start="Job:Job" End="Job:Person" StartNavigator="Person" EndNavigator="Jobs" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="EstimatorId" PkField="PersonId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Job.Status-Job.Status.Jobs" Start="Job:Job" End="Job:Status" StartNavigator="Status" EndNavigator="Jobs" Type="4">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="StatusId" PkField="StatusId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Payment.Job-Job.Job.Payments" Start="Job:Payment" End="Job:Job" StartNavigator="Job" EndNavigator="Payments" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="JobId" PkField="JobId" />
+        </FieldRelationships>
+      </NormalRelationship>
+      <NormalRelationship Name="Job.Person.Role-Job.Role.People" Start="Job:Person" End="Job:Role" StartNavigator="Role" EndNavigator="People" Type="4" EndIsOptional="true">
+        <FieldRelationships>
+          <FieldFieldRelationship FkField="RoleId" PkField="RoleId" />
+        </FieldRelationships>
+      </NormalRelationship>
+    </Relationships>
+    <InheritanceHierarchies />
+  </EntityModel>
+  <TargetDatabases>
+    <TargetDatabase Type="2D18D138-1DD2-467E-86CC-4838250611AE" SyncSource="2">
+      <ConnectionElements>
+        <ConnectionElement Name="ServerName" Value=".\SQLEXPRESS" />
+        <ConnectionElement Name="CatalogName" Value="master" />
+        <ConnectionElement Name="UseWindowsAuthentication" Value="true" />
+        <ConnectionElement Name="UserID" Value="" />
+        <ConnectionElement Name="Password" Value="" />
+      </ConnectionElements>
+      <SystemSequences>
+        <Sequence Name="SCOPE_IDENTITY()" />
+        <Sequence Name="@@IDENTITY" />
+      </SystemSequences>
+      <Catalogs>
+        <Catalog Name="Job" SyncSource="2">
+          <Schemas>
+            <Schema Name="dbo" SyncSource="2" LastSyncWithDatabase="2017-09-17T12:30:18.0395542Z">
+              <Tables>
+                <Table Name="Billing">
+                  <PkConstraintName Name="aaaaaBilling_PK" />
+                  <Fields>
+                    <Field Name="BillingId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="JobId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Date" Ordinal="3" IsOptional="true" DbType="4" />
+                    <Field Name="Amount" Ordinal="4" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="Description" Ordinal="5" IsOptional="true" DbType="12" Length="1024" />
+                  </Fields>
+                </Table>
+                <Table Name="Damage">
+                  <PkConstraintName Name="aaaaaDamage_PK" />
+                  <Fields>
+                    <Field Name="DamageId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Description" Ordinal="3" IsOptional="true" DbType="12" Length="1024" />
+                    <Field Name="Active" Ordinal="4" HasDefaultValue="true" DefaultValue="1" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="Expense">
+                  <PkConstraintName Name="aaaaaExpense_PK" />
+                  <Fields>
+                    <Field Name="ExpenseId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="JobId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="VendorId" Ordinal="3" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="InvoiceDate" Ordinal="4" IsOptional="true" DbType="4" />
+                    <Field Name="ExternalInvoice" Ordinal="5" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="MaterialCost" Ordinal="6" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="LaborHours" Ordinal="7" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="LaborRate" Ordinal="8" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="LaborCost" Ordinal="9" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="TotalCost" Ordinal="10" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="Description" Ordinal="11" IsOptional="true" DbType="12" Length="1024" />
+                  </Fields>
+                </Table>
+                <Table Name="Group">
+                  <PkConstraintName Name="PK_Group" />
+                  <Fields>
+                    <Field Name="GroupId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" DbType="12" Length="50" />
+                    <Field Name="Description" Ordinal="3" IsOptional="true" DbType="12" Length="1024" />
+                    <Field Name="Active" Ordinal="4" HasDefaultValue="true" DefaultValue="1" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="Job">
+                  <PkConstraintName Name="aaaaaJob_PK" />
+                  <Fields>
+                    <Field Name="JobId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="DamageId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="StatusId" Ordinal="3" DbType="8" Precision="10" />
+                    <Field Name="EstimatorId" Ordinal="4" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="GroupId" Ordinal="5" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="6" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Address1" Ordinal="7" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Address2" Ordinal="8" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="City" Ordinal="9" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="State" Ordinal="10" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Zip" Ordinal="11" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="ContractedAmount" Ordinal="12" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="StartDate" Ordinal="13" IsOptional="true" DbType="4" />
+                    <Field Name="EndDate" Ordinal="14" IsOptional="true" DbType="4" />
+                    <Field Name="UpdateDate" Ordinal="15" IsOptional="true" DbType="4" />
+                    <Field Name="Overhead" Ordinal="16" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="Description" Ordinal="17" IsOptional="true" DbType="12" Length="1024" />
+                    <Field Name="PercentDone" Ordinal="18" HasDefaultValue="true" DefaultValue="0" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="IsAging" Ordinal="19" HasDefaultValue="true" DefaultValue="0" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="Payment">
+                  <PkConstraintName Name="aaaaaPayment_PK" />
+                  <Fields>
+                    <Field Name="PaymentId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="JobId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Date" Ordinal="3" IsOptional="true" DbType="4" />
+                    <Field Name="Amount" Ordinal="4" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                    <Field Name="Description" Ordinal="5" IsOptional="true" DbType="12" Length="1024" />
+                  </Fields>
+                </Table>
+                <Table Name="Person">
+                  <PkConstraintName Name="aaaaaPerson_PK" />
+                  <Fields>
+                    <Field Name="PersonId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="RoleId" Ordinal="2" IsOptional="true" DbType="8" Precision="10" />
+                    <Field Name="Username" Ordinal="3" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Password" Ordinal="4" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="FirstName" Ordinal="5" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="LastName" Ordinal="6" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Description" Ordinal="7" IsOptional="true" DbType="12" Length="1024" />
+                    <Field Name="Active" Ordinal="8" HasDefaultValue="true" DefaultValue="0" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="Role">
+                  <PkConstraintName Name="aaaaaRole_PK" />
+                  <Fields>
+                    <Field Name="RoleId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Description" Ordinal="3" IsOptional="true" DbType="12" Length="1024" />
+                    <Field Name="Active" Ordinal="4" HasDefaultValue="true" DefaultValue="1" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="Settings">
+                  <PkConstraintName Name="aaaaaSettings_PK" />
+                  <Fields>
+                    <Field Name="SettingsId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="Xml" Ordinal="2" IsOptional="true" DbType="12" Length="2048" />
+                    <Field Name="DbVersion" Ordinal="3" IsOptional="true" DbType="9" Precision="19" Scale="4" />
+                  </Fields>
+                </Table>
+                <Table Name="Status">
+                  <PkConstraintName Name="aaaaaStatus_PK" />
+                  <Fields>
+                    <Field Name="StatusId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Description" Ordinal="3" IsOptional="true" DbType="12" Length="1024" />
+                    <Field Name="Active" Ordinal="4" HasDefaultValue="true" DefaultValue="1" DbType="2" />
+                  </Fields>
+                </Table>
+                <Table Name="Vendor">
+                  <PkConstraintName Name="aaaaaVendor_PK" />
+                  <Fields>
+                    <Field Name="VendorId" Ordinal="1" IsIdentity="true" IsPrimaryKey="true" DbType="8" Precision="10" />
+                    <Field Name="Name" Ordinal="2" IsOptional="true" DbType="12" Length="50" />
+                    <Field Name="Description" Ordinal="3" IsOptional="true" DbType="12" Length="1024" />
+                    <Field Name="Active" Ordinal="4" HasDefaultValue="true" DefaultValue="1" DbType="2" />
+                  </Fields>
+                </Table>
+              </Tables>
+            </Schema>
+          </Schemas>
+          <ForeignKeyConstraints>
+            <ForeignKeyConstraint Name="dbo:Billing:Billing_FK00">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Job:JobId" FkField="dbo:Billing:JobId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Expense:Expense_FK00">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Job:JobId" FkField="dbo:Expense:JobId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Expense:Expense_FK01">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Vendor:VendorId" FkField="dbo:Expense:VendorId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Job:FK_Job_Group">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Group:GroupId" FkField="dbo:Job:GroupId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Job:Job_FK00">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Damage:DamageId" FkField="dbo:Job:DamageId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Job:Job_FK01">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Person:PersonId" FkField="dbo:Job:EstimatorId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Job:Job_FK02">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Status:StatusId" FkField="dbo:Job:StatusId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Payment:Payment_FK00">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Job:JobId" FkField="dbo:Payment:JobId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+            <ForeignKeyConstraint Name="dbo:Person:Person_FK00">
+              <FieldPairs>
+                <FieldPair PkField="dbo:Role:RoleId" FkField="dbo:Person:RoleId" />
+              </FieldPairs>
+            </ForeignKeyConstraint>
+          </ForeignKeyConstraints>
+        </Catalog>
+      </Catalogs>
+    </TargetDatabase>
+  </TargetDatabases>
+  <MappingStores>
+    <MappingStore Type="2D18D138-1DD2-467E-86CC-4838250611AE">
+      <EntityMappings>
+        <EntityMapping EntityName="Job:Billing" TargetName="Job:dbo:Billing">
+          <FieldMappings>
+            <FieldMapping FieldName="Amount" TargetFieldName="Amount" />
+            <FieldMapping FieldName="BillingId" TargetFieldName="BillingId" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Date" TargetFieldName="Date" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="JobId" TargetFieldName="JobId" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Damage" TargetName="Job:dbo:Damage">
+          <FieldMappings>
+            <FieldMapping FieldName="Active" TargetFieldName="Active" />
+            <FieldMapping FieldName="DamageId" TargetFieldName="DamageId" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Expense" TargetName="Job:dbo:Expense">
+          <FieldMappings>
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="ExpenseId" TargetFieldName="ExpenseId" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="ExternalInvoice" TargetFieldName="ExternalInvoice" />
+            <FieldMapping FieldName="InvoiceDate" TargetFieldName="InvoiceDate" />
+            <FieldMapping FieldName="JobId" TargetFieldName="JobId" />
+            <FieldMapping FieldName="LaborCost" TargetFieldName="LaborCost" />
+            <FieldMapping FieldName="LaborHours" TargetFieldName="LaborHours" />
+            <FieldMapping FieldName="LaborRate" TargetFieldName="LaborRate" />
+            <FieldMapping FieldName="MaterialCost" TargetFieldName="MaterialCost" />
+            <FieldMapping FieldName="TotalCost" TargetFieldName="TotalCost" />
+            <FieldMapping FieldName="VendorId" TargetFieldName="VendorId" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Group" TargetName="Job:dbo:Group">
+          <FieldMappings>
+            <FieldMapping FieldName="Active" TargetFieldName="Active" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="GroupId" TargetFieldName="GroupId" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Job" TargetName="Job:dbo:Job">
+          <FieldMappings>
+            <FieldMapping FieldName="Address1" TargetFieldName="Address1" />
+            <FieldMapping FieldName="Address2" TargetFieldName="Address2" />
+            <FieldMapping FieldName="City" TargetFieldName="City" />
+            <FieldMapping FieldName="ContractedAmount" TargetFieldName="ContractedAmount" />
+            <FieldMapping FieldName="DamageId" TargetFieldName="DamageId" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="EndDate" TargetFieldName="EndDate" />
+            <FieldMapping FieldName="EstimatorId" TargetFieldName="EstimatorId" />
+            <FieldMapping FieldName="GroupId" TargetFieldName="GroupId" />
+            <FieldMapping FieldName="IsAging" TargetFieldName="IsAging" />
+            <FieldMapping FieldName="JobId" TargetFieldName="JobId" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+            <FieldMapping FieldName="Overhead" TargetFieldName="Overhead" />
+            <FieldMapping FieldName="PercentDone" TargetFieldName="PercentDone" />
+            <FieldMapping FieldName="StartDate" TargetFieldName="StartDate" />
+            <FieldMapping FieldName="State" TargetFieldName="State" />
+            <FieldMapping FieldName="StatusId" TargetFieldName="StatusId" />
+            <FieldMapping FieldName="UpdateDate" TargetFieldName="UpdateDate" />
+            <FieldMapping FieldName="Zip" TargetFieldName="Zip" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Payment" TargetName="Job:dbo:Payment">
+          <FieldMappings>
+            <FieldMapping FieldName="Amount" TargetFieldName="Amount" />
+            <FieldMapping FieldName="Date" TargetFieldName="Date" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="JobId" TargetFieldName="JobId" />
+            <FieldMapping FieldName="PaymentId" TargetFieldName="PaymentId" SequenceToUse="SCOPE_IDENTITY()" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Person" TargetName="Job:dbo:Person">
+          <FieldMappings>
+            <FieldMapping FieldName="Active" TargetFieldName="Active" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="FirstName" TargetFieldName="FirstName" />
+            <FieldMapping FieldName="LastName" TargetFieldName="LastName" />
+            <FieldMapping FieldName="Password" TargetFieldName="Password" />
+            <FieldMapping FieldName="PersonId" TargetFieldName="PersonId" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="RoleId" TargetFieldName="RoleId" />
+            <FieldMapping FieldName="Username" TargetFieldName="Username" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Role" TargetName="Job:dbo:Role">
+          <FieldMappings>
+            <FieldMapping FieldName="Active" TargetFieldName="Active" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+            <FieldMapping FieldName="RoleId" TargetFieldName="RoleId" SequenceToUse="SCOPE_IDENTITY()" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Setting" TargetName="Job:dbo:Settings">
+          <FieldMappings>
+            <FieldMapping FieldName="DbVersion" TargetFieldName="DbVersion" />
+            <FieldMapping FieldName="SettingsId" TargetFieldName="SettingsId" SequenceToUse="SCOPE_IDENTITY()" />
+            <FieldMapping FieldName="Xml" TargetFieldName="Xml" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Status" TargetName="Job:dbo:Status">
+          <FieldMappings>
+            <FieldMapping FieldName="Active" TargetFieldName="Active" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+            <FieldMapping FieldName="StatusId" TargetFieldName="StatusId" SequenceToUse="SCOPE_IDENTITY()" />
+          </FieldMappings>
+        </EntityMapping>
+        <EntityMapping EntityName="Job:Vendor" TargetName="Job:dbo:Vendor">
+          <FieldMappings>
+            <FieldMapping FieldName="Active" TargetFieldName="Active" />
+            <FieldMapping FieldName="Description" TargetFieldName="Description" />
+            <FieldMapping FieldName="Name" TargetFieldName="Name" />
+            <FieldMapping FieldName="VendorId" TargetFieldName="VendorId" SequenceToUse="SCOPE_IDENTITY()" />
+          </FieldMappings>
+        </EntityMapping>
+      </EntityMappings>
+      <TypedViewMappings />
+      <SPCallMappings />
+      <TvfCallMappings />
+      <TypeConversionDefinitions />
+    </MappingStore>
+  </MappingStores>
+  <ModelViews />
+</Project>
