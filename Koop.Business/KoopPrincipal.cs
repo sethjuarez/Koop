@@ -9,27 +9,13 @@ using System.Web.Security;
 
 namespace Koop.Business
 {
-    public class JobTrackerPrincipal : IPrincipal
+    public class KoopPrincipal : IPrincipal
     {
-        //private static JobTrackerPrincipal _current;
-        private JobTrackerIdentity _identity;
+        private KoopIdentity _identity;
         private RoleEntity _role;
         private IDataAccessAdapter _adapter;
         private Roles _roles;
-        private JobTrackerRoles _roleType;
-
-        //public static JobTrackerPrincipal Current
-        //{
-        //    get
-        //    {
-        //        if (JobTrackerPrincipal._current == null)
-        //        {
-        //            JobTrackerPrincipal._current = new JobTrackerPrincipal();
-        //        }
-
-        //        return JobTrackerPrincipal._current;
-        //    }
-        //}
+        private KoopRoles _roleType;
 
         public IIdentity Identity
         {
@@ -49,11 +35,11 @@ namespace Koop.Business
             }
         }
 
-        public JobTrackerRoles Role
+        public KoopRoles Role
         {
             get
             {
-                bool flag = this._roleType != JobTrackerRoles.Unidentified;
+                bool flag = this._roleType != KoopRoles.Unidentified;
                 if (!flag)
                 {
                     flag = this._identity.User != null;
@@ -68,26 +54,26 @@ namespace Koop.Business
                                 flag = this._identity.User.RoleId != _roles.VicePresident;
                                 if (flag)
                                 {
-                                    this._roleType = JobTrackerRoles.Unidentified;
+                                    this._roleType = KoopRoles.Unidentified;
                                 }
                                 else
                                 {
-                                    this._roleType = JobTrackerRoles.VicePresident;
+                                    this._roleType = KoopRoles.VicePresident;
                                 }
                             }
                             else
                             {
-                                this._roleType = JobTrackerRoles.Estimator;
+                                this._roleType = KoopRoles.Estimator;
                             }
                         }
                         else
                         {
-                            this._roleType = JobTrackerRoles.Admin;
+                            this._roleType = KoopRoles.Admin;
                         }
                     }
                     else
                     {
-                        this._roleType = JobTrackerRoles.Unidentified;
+                        this._roleType = KoopRoles.Unidentified;
                     }
                 }
 
@@ -95,15 +81,26 @@ namespace Koop.Business
             }
         }
 
-        private JobTrackerPrincipal(IDataAccessAdapter adapter, Roles roles)
+        public static KoopPrincipal Empty => new KoopPrincipal();
+
+        private KoopPrincipal()
         {
             _identity = null;
             _role = null;
             _adapter = null;
-            _roleType = JobTrackerRoles.Unidentified;
+            _roleType = KoopRoles.Unidentified;
+            _identity = new KoopIdentity(_adapter, null, false);
+        }
+
+        public KoopPrincipal(IDataAccessAdapter adapter, Roles roles)
+        {
+            _identity = null;
+            _role = null;
+            _adapter = null;
+            _roleType = KoopRoles.Unidentified;
             _adapter = adapter;
             _roles = roles;
-            _identity = new JobTrackerIdentity(_adapter, null, false);
+            _identity = new KoopIdentity(_adapter, null, false);
         }
 
         public bool Login(string username, string password)
@@ -121,12 +118,12 @@ namespace Koop.Business
             this._adapter.CloseConnection();
             if (collectionToFill.Items.Count != 1)
             {
-                this._identity = new JobTrackerIdentity(_adapter, null, false);
+                this._identity = new KoopIdentity(_adapter, null, false);
                 authenticated = false;
             }
             else
             {
-                this._identity = new JobTrackerIdentity(_adapter, collectionToFill[0], true);
+                this._identity = new KoopIdentity(_adapter, collectionToFill[0], true);
                 authenticated = true;
             }
 
@@ -173,10 +170,5 @@ namespace Koop.Business
 
             return this._role.Name == role;
         }
-
-        //static JobTrackerPrincipal()
-        //{
-        //    JobTrackerPrincipal._current = null;
-        //}
     }
 }

@@ -12,10 +12,10 @@ namespace Koop.Business
     public class EstimatorSummaryCollection : CollectionBase
     {
         private decimal _totalProjected;
-        private readonly JobTrackerPrincipal _principal;
+        private readonly KoopPrincipal _principal;
         private readonly IDataAccessAdapter _adapter;
 
-        public EstimatorSummaryCollection(JobTrackerPrincipal principal, IDataAccessAdapter adapter)
+        public EstimatorSummaryCollection(KoopPrincipal principal, IDataAccessAdapter adapter)
         {
             _principal = principal;
             this._adapter = adapter;
@@ -82,7 +82,7 @@ namespace Koop.Business
             fieldCollectionToFetch.DefineField(new EntityField2("JobCount", new ScalarQueryExpression(JobFields.JobId.SetAggregateFunction(AggregateFunction.Count), PersonFields.PersonId == JobFields.EstimatorId)), 6);
             DataTable dataTableToFill = new DataTable("EstimatorSummary");
             _adapter.OpenConnection();
-            bool flag = _principal.Role != JobTrackerRoles.Estimator && _principal.Role != JobTrackerRoles.Unidentified;
+            bool flag = _principal.Role != KoopRoles.Estimator && _principal.Role != KoopRoles.Unidentified;
             if (flag)
             {
                 _adapter.FetchTypedList(fieldCollectionToFetch, dataTableToFill, null);

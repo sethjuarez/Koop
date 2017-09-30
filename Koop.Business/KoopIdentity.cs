@@ -9,7 +9,7 @@ using System.Web.Security;
 
 namespace Koop.Business
 {
-    public class JobTrackerIdentity : IIdentity
+    public class KoopIdentity : IIdentity
     {
         private PersonEntity _user;
         private bool _isAuthenticated;
@@ -70,7 +70,7 @@ namespace Koop.Business
             }
         }
 
-        public JobTrackerIdentity(IDataAccessAdapter adapter)
+        public KoopIdentity(IDataAccessAdapter adapter)
         {
             this._user = null;
             this._isAuthenticated = false;
@@ -81,7 +81,7 @@ namespace Koop.Business
             this._isAuthenticated = false;
         }
 
-        internal JobTrackerIdentity(IDataAccessAdapter adapter, PersonEntity user, bool isAuthenticated)
+        internal KoopIdentity(IDataAccessAdapter adapter, PersonEntity user, bool isAuthenticated)
         {
             this._user = null;
             this._isAuthenticated = false;

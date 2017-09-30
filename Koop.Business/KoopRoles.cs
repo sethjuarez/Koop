@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Koop.Business
 {
-    public enum JobTrackerRoles
+    public enum KoopRoles
     {
         Unidentified = 0,
         Admin = 1,

@@ -22,7 +22,6 @@ namespace Koop.Business
     public class LookupTables
     {
         private IDataAccessAdapter _adapter;
-        private Roles _role;
         private EntityCollection _groups;
         private EntityCollection _roles;
         private EntityCollection _estimators;
@@ -34,7 +33,7 @@ namespace Koop.Business
         protected virtual void OnChanged(EventArgs e) =>
             Changed?.Invoke(this, e);
 
-        public LookupTables(IDataAccessAdapter adapter, Roles roles)
+        public LookupTables(IDataAccessAdapter adapter)
         {
             _groups = null;
             _roles = null;
@@ -43,7 +42,6 @@ namespace Koop.Business
             _damageType = null;
             _vendor = null;
             _adapter = adapter;
-            _role = roles;
         }
 
         private EntityCollection Fetch(EntityCollection collection, IRelationPredicateBucket predicateBucket = null)
@@ -81,10 +79,10 @@ namespace Koop.Business
             get
             {
                 if (_estimators == null)
-                    _estimators = Fetch(new EntityCollection(new PersonEntityFactory()),
+                    _estimators = Fetch(new EntityCollection(new PersonEntityFactory()) /*,
                         new RelationPredicateBucket(
                             PersonFields.RoleId == _role.Estimator |
-                            PersonFields.RoleId == _role.VicePresident));
+                            PersonFields.RoleId == _role.VicePresident)*/);
 
                 return _estimators;
             }

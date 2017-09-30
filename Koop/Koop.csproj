@@ -31,9 +31,30 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Koop.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="SD.LLBLGen.Pro.ORMSupportClasses, Version=5.2.0.0, Culture=neutral, PublicKeyToken=ca73b74ba4e3ff27, processorArchitecture=MSIL" />
+    <Reference Include="StructureMap, Version=4.5.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StructureMap.4.5.2\lib\net45\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,17 +67,37 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KoopRegistry.cs" />
+    <Compile Include="LoginsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginsForm.Designer.cs">
+      <DependentUpon>LoginsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LoginsForm.resx">
+      <DependentUpon>LoginsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -66,6 +107,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -92,6 +134,48 @@
       <Project>{07f5ff15-30ff-40cc-883a-83992abe31d2}</Project>
       <Name>Koop.DataDBSpecific</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Images\Billing.png" />
+    <Content Include="Images\Billing_32x32.png" />
+    <Content Include="Images\Close.png" />
+    <Content Include="Images\Close_32x32.png" />
+    <Content Include="Images\Damage.png" />
+    <Content Include="Images\Damage_32x32.png" />
+    <Content Include="Images\Delete.png" />
+    <Content Include="Images\Delete_32x32.png" />
+    <Content Include="Images\Details.png" />
+    <Content Include="Images\Details_32x32.png" />
+    <Content Include="Images\Expenses.png" />
+    <Content Include="Images\Expenses_32x32.png" />
+    <Content Include="Images\Insurance.png" />
+    <Content Include="Images\Insurance_32x32.png" />
+    <Content Include="Images\Job.png" />
+    <Content Include="Images\Job_32x32.png" />
+    <Content Include="Images\New.png" />
+    <Content Include="Images\New_32x32.png" />
+    <Content Include="Images\Next.png" />
+    <Content Include="Images\Next_32x32.png" />
+    <Content Include="Images\Overhead.png" />
+    <Content Include="Images\Overhead_32x32.png" />
+    <Content Include="Images\Payment.png" />
+    <Content Include="Images\Payment_32x32.png" />
+    <Content Include="Images\Person.png" />
+    <Content Include="Images\Person_32x32.png" />
+    <Content Include="Images\Prev.png" />
+    <Content Include="Images\Prev_32x32.png" />
+    <Content Include="Images\Refresh.png" />
+    <Content Include="Images\Refresh_32x32.png" />
+    <Content Include="Images\Role.png" />
+    <Content Include="Images\Role_32x32.png" />
+    <Content Include="Images\Settings.png" />
+    <Content Include="Images\Settings_32x32.png" />
+    <Content Include="Images\Status.png" />
+    <Content Include="Images\Status_32x32.png" />
+    <Content Include="Images\Vendor.png" />
+    <Content Include="Images\Vendor_32x32.png" />
+    <Content Include="Koop.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
